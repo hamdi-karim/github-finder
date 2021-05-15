@@ -14,7 +14,9 @@ const Search = ({ showClear, clearUsers, searchUsers, setAlert }) => {
     }
   };
 
-  const onTextChange = (event) => setText(event.target.name);
+  const onTextChange = (event) => {
+    setText(event.target.value);
+  };
 
   return (
     <div>
